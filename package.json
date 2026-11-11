@@ -1,0 +1,34 @@
+{
+  "name": "romcrm-deals",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test:copilot": "tsc src/lib/copilot/copilot.test.ts --outDir node_modules/.cache/copilot-test --module commonjs --target es2020 --moduleResolution node --strict --esModuleInterop --skipLibCheck --types node && node node_modules/.cache/copilot-test/copilot/copilot.test.js",
+    "test:lead-stream": "tsc src/lib/assignment.test.ts --outDir node_modules/.cache/lead-stream-test --module commonjs --target es2020 --moduleResolution node --strict --esModuleInterop --skipLibCheck --types node && node node_modules/.cache/lead-stream-test/assignment.test.js",
+    "test:conversions": "tsc src/lib/conversions.test.ts --outDir node_modules/.cache/conversions-test --module commonjs --target es2020 --moduleResolution node --strict --esModuleInterop --skipLibCheck --types node && node node_modules/.cache/conversions-test/conversions.test.js"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "lucide-react": "^1.65.0",
+    "next": "15.5.28",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.28",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
